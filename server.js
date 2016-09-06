@@ -43,6 +43,14 @@ var urlSchema = new mongoose.Schema({
 
 var Url = mongoose.model('Url', urlSchema);
 
+router.get('/', function(req, res){
+  res.send([
+    '<h1>URL Shortener</h1>',
+    'Shorten URL:',
+    '<code>GET /new/{url}</code><br>',
+  ].join('<br>'));
+});
+
 router.get('/new/*', function(req, res){
   var originalUrl = req.params[0];
 
