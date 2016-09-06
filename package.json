@@ -1,0 +1,10 @@
+{
+  "name": "fcc-url-shortener-ms",
+  "author": "Jack P.",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.6.0",
+    "shortid": "^2.2.6",
+    "valid-url": "^1.0.9"
+  }
+}
